@@ -23,23 +23,24 @@ const questions = [
         name: "usage"
     }, {
         type: "input",
-        message: "Any screenshot in assets/images to include? (eg. screenshot.png) Leave it ''(empty) if N/A.",
+        message: "Any screenshot in assets/images to include (eg. screenshot.png)? Answer 'na' if N/A.",
         name: "screenshot"
     }, {
         type: "input",
         message: "Any alt text for the screenshot? Leave it ''(empty) if N/A.",
         name: "scrnshotAltTxt"
     }, {
-        type: "input",
-        message: "Type of license? Leave it ''(empty) if N/A.",
+        type: "list",
+        message: "Type of license?",
+        choices: ["None", "MIT", "Apache 2.0", "GPL 3.0", "BSD3"],
         name: "license"
     }, {
         type: "input",
-        message: "Guideline for contribution? Leave it ''(empty) if N/A.",
+        message: "Guideline for contribution? Answer 'na' if N/A.",
         name: "contributing"
     }, {
         type: "input",
-        message: "Instruction for tests?",
+        message: "Instruction for tests? Answer 'na' if N/A.",
         name: "test"
     }, {
         type: "input",
